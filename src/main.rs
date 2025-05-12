@@ -6,6 +6,7 @@ use clap::Parser;
 mod fs;
 
 #[derive(Debug, Parser)]
+#[clap(version)]
 struct Cli {
     #[clap(short, long)]
     verbose: bool,
